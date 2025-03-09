@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>My GitHub Page</title>
+  <style>
+    h1 {text-align: center;}
+    h2 {margin-left: 200px;}
+    p {text-align: center;}
+    div {text-align: center;}
+    iframe {display: block; margin: 0 auto; text-align: center;}
+    body {font-family: Verdana, sans-serif;}
+
+    /* Image div behind the button */
+    .image-background {
+      position: fixed;
+      top: 20px;
+      left: 20px;
+      height: min(10vw,10vh);
+      width: min(10vw,10vh);
+      background-image: url('https://aeriab.github.io/official_profile_picture.svg');
+      background-size: cover;
+      background-position: center;
+      border: none;
+      z-index: 1;
+    }
+
+    /* Button in the top-left corner */
+    .top-left-button {
+      position: fixed;
+      top: 20px;
+      left: 20px;
+      height: min(10vw,10vh);
+      width: min(10vw,10vh);
+      background-color: transparent;
+      color: white;
+      cursor: pointer;
+      border: none;
+      font-size: 16px;
+      z-index: 2;
+    }
+  </style>
+</head>
+<body>
+  <h1>Welcome to the BCI Team 9 diagnostic test</h1>
+  <br>
+  <p>Once you start, try your best to hit SPACEBAR as quickly as possible, but only when a red dot appears.</p>
+
+  <div class="image-background"></div>
+  <a href="https://aeriab.github.io/">
+    <button class="top-left-button"></button>
+  </a>
+  <!-- <button class="top-left-button">Top Left Button</button> -->
+
+    <iframe frameborder="0" src="https://aeriab.github.io/diagnosticPage/diagnostic/bciTeam(1)/index.html" allowfullscreen="" width="1152" height="648"><a href="https://aeriab.github.io/diagnosticPage/diagnostic/bciTeam(1)/index.html">Run diagnostic</a></iframe>
+    <!-- <h2>Use WASD or Arrow Keys for movement.</h2>
+    <h2>Press RESTART at any time. Progress is saved if you press EXIT.</h2> -->
+
+    <!-- <iframe frameborder="0" src="https://aeriab.github.io/games/srs25/srs25-1/index.html" allowfullscreen="" width="1152" height="648"><a href="https://aeriab.github.io/games/srs25/srs25-1/index.html">Play SRS25</a></iframe>
+    <h2>Pro tip: keep the larger tiles in the corner to keep them next to one another.</h2>
+    <h2>This was made by Brendan Aeria in 36 hours for the ACM Studio Cozy jam.</h2>
+    <h2>Made in Godot 4.3</h2> -->
+
+  <script>
+    if ('serviceWorker' in navigator) {
+      window.addEventListener('load', () => {
+        navigator.serviceWorker.register('/service-worker.js');
+      });
+    }
+  </script>
+</body>
+</html>
